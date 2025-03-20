@@ -47,27 +47,8 @@ s consists of parentheses only '()[]{}'.
    top of the stack has an opening bracket for it, if it is we pop it from the stack otherwise we return false.   
 
 """
-def solution():
-        input_string = input("Add a string of brackets: ")
-        if len(input_string) % 2 == 0:
-            return True
+def solution(s):
+    pass
         
-        stack = []
-        for e in input_string:
-            if e in '([{':
-                stack.append(e)
-                
-            elif e in ')]}':
-                if len(stack) == 0:
-                    return False
-                
-                if e in stack[0] == '([{':
-                    stack.pop()
-                else:
-                    return False
-            else:
-                if len(stack) == 0:
-                    return True    
-                    
 
-solution()                
+             
